@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 10px;
+  }
+}
+
+body {
+  background: $black;
+  overflow-x: hidden;
+}
+
+
+
+@media (max-width: 991px) {
+
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 450px) {
+
+  html {
+    font-size: 50%;
+  }
+}
